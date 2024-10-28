@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "computational-graph-comparison"
+version = "0.1.0"
+description = ""
+authors = ["Fernando Rodriguez <fernando.rodriguez@ailylabs.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10.6,<3.11"
+aily-ai-brain = "^1.16.11"
+dask = "^2024.10.0"
+graphviz = "^0.20.3"
+ray = {extras = ["default"], version = "2.*"}
+
+
+[[tool.poetry.source]]
+name = "cloudsmith"
+url = "https://dl.cloudsmith.io/PRBlnvv3GHFM3KDl/ailylabs/pip/python/simple/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
